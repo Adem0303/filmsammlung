@@ -51,7 +51,7 @@ const movieId = urlParams.get('id');
 
 // Abrufen der Filmdetails
 if (movieId) {
-    fetch(`${BASE_URL}/movie/${movieId}?api_key=${API_KEY}`)
+    fetch(`${BASE_URL}/movie/${movieId}?api_key=${API_KEY}&language=de-DE`)
         .then(response => response.json())
         .then(movie => {
             document.getElementById('movie-poster').src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
