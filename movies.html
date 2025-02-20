@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">MY <span class="mocologo">MOCO</span></a>
+            </div>
+            <div class="suchfeld">
+                <input type="text" id="search" placeholder="Suche nach einen Film..." />
+                <i class="fa-solid fa-x" id="clear-search-icon"></i> <!-- X-Icon -->
+            </div>
+            <div class="link-container">
+                <ul class="links"> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="movie-collection.html">My Collection</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <select id="languageSwitcher">
+                                <option value="en">English</option>
+                                <option value="de">Deutsch</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="category" id="popular-movies">
+        <h2>Beliebte Filme</h2>
+        <ul class="movie-list" id="popular-movie-list"></ul>
+    </div>
+    
+    <div class="category" id="action-adventure-movies">
+        <h2>Actionfilme</h2>
+        <ul class="movie-list" id="action-adventure-movie-list"></ul>
+    </div>
+    
+    <div class="category" id="new-releases">
+        <h2>Neuheiten</h2>
+        <ul class="movie-list" id="new-releases-movie-list"></ul>
+    </div>
+    
+    <div class="category" id="trending-movies">
+        <h2>Aktuell angesagte Filme</h2>
+        <ul class="movie-list" id="trending-movie-list"></ul>
+    </div>
+    
+    <div class="category" id="horror-movies">
+        <h2>Horrorfilme</h2>
+        <ul class="movie-list" id="horror-movie-list"></ul>
+    </div>
+    <div class="kachelansicht">
+        <ul id="movie-list"></ul>
+    </div>   
+    <script src="script.js"></script>
+</body>
+</html>

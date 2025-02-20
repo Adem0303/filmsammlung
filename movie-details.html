@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="movie-details-page">
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">MY <span class="mocologo">MOCO</span></a>
+            </div>
+            <div class="link-container">
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="movie-collection.html">My Collection</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <select id="languageSwitcher">
+                                <option value="en">English</option>
+                                <option value="de">Deutsch</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="notification-container" class="notification-container"></div>
+    <div id="movie-details">
+        <div class="movie-detail">
+            <div>
+                <img id="movie-poster" class="movie-posterImage" src="" alt="Movie Poster">
+            </div>
+            <div class="movie-info">
+                <h2 id="movie-title">Title</h2>
+                <div class="movie-infoInhalt">
+                    <p><strong>Jahr:</strong> <span id="movie-year">Unbekannt</span></p>
+                    <p><strong>Laufzeit:</strong> <span id="movie-runtime">Unbekannt</span></p>
+                    <p><strong>Alter:</strong> <span id="movie-age">jedes Alter</span></p>
+                    <p><strong>Genres:</strong> <span id="movie-genres">Unbekannt</span> <button id="moreGenresBtn">Mehr</button></p>
+                </div>
+            <div class="details-button">
+                <button id="add-to-collection" class="add-to-collection-btn">
+                    <i class="fa-solid fa-plus"></i> Zur Sammlung hinzufügen
+                </button>
+                <button id="mark-seen" class="seen-btn">
+                    <i class="fa-solid fa-eye"></i> Als gesehen markieren
+                </button>
+                <button id="mark-favorite" class="mark-btn">
+                    <i class="fa-solid fa-heart"></i> Zu Favoriten hinzufügen
+                </button>
+            </div>
+                <div class="description-container">
+                    <p><strong>Beschreibung:</strong> <span id="movie-description">Keine Beschreibung verfügbar.</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

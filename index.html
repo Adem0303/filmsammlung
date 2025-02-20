@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">MY <span class="mocologo">MOCO</span></a>
+            </div>
+            <div class="link-container">
+                <ul class="links"> 
+                    <li><a href="#">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="movie-collection.html">My Collection</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <select id="languageSwitcher">
+                                <option value="en">English</option>
+                                <option value="de">Deutsch</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="image-container">
+        <img src="images/MovieBild.png" alt="My MOCO Bild" class="logo-img">
+        <button><a href="movies.html">Jetzt Filme hinzufügen</a></button>
+    </div>
+
+    <div class="kachelansicht">
+        <ul id="movie-list"></ul>
+    </div>
+
+    <h2 class="container_einleitung" id="container_einleitung">
+        Mit diesen Funktionen können Sie einfach und bequem ihre Filmsammlung verwalten:
+    </h2>
+
+    <div class="container_box">
+        <div class="container_eins">
+            <img src="images/icon_add.png" alt="Film hinzufügen">
+            <h3>Film hinzufügen</h3>
+            <p>Ganz einfach nach Filme schauen und in die Sammlung hinzufügen.</p>
+        </div>
+        <div class="container_zwei">
+            <img src="images/icon_heart.png" alt="Favoriten speichern">
+            <h3>Favoriten speichern</h3>
+            <p>Speicher deine lieblingsfilme, um sie schnell wiederzufinden.</p>
+        </div>
+        <div class="container_drei">
+            <img src="images/icon_eye.png" alt="Gesehen">
+            <h3>Gesehen</h3>
+            <p>Markiere Filme, die du bereits gesehen hast.</p>
+        </div>
+    </div>
+
+    <div class="container_box_unten">
+        <div class="container_vier">
+            <img src="images/icon_star.png" alt="Bewertung">
+            <h3>Bewertung</h3>
+            <p>Gib Filme eine Bewertung ab und bewerte sie.</p>
+        </div>
+        <div class="container_fuenf">
+            <img src="images/icon_sort.png" alt="Filter">
+            <h3>Sortieren</h3>
+            <p>Ordne deine Sammlung nach deinen Wünschen.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_mitte">
+                <p>© 2025 MOCO. Alle Rechte vorbehalten.</p>
+            </div>
+            <div class="footer_rechts">
+                <a href="#" class="hover:underline">Datenschutz</a>
+                <a href="#" class="hover:underline">Impressum</a>
+                <a href="#" class="hover:underline">Kontakt</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

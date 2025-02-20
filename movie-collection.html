@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movie Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">MY <span class="mocologo">MOCO</span></a>
+            </div>
+            <div class="link-container">
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="movie-collection.html">My Collection</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <select id="languageSwitcher">
+                                <option value="en">English</option>
+                                <option value="de">Deutsch</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <div class="head_container">
+    <h2>My Movie Collection</h2>
+    <p class="anzahl" id="movie-count">Anzahl der Filme: 0</p>
+    </div>
+    <div class="reihe-container">
+        <div class="view-toggle">
+            <button id="list-view-btn">Listenansicht</button>
+            <button id="grid-view-btn">Kachelansicht</button>
+        </div>
+        <button id="edit-btn" class="editable">Bearbeiten</button>
+        <div class="filter-container">
+            <select id="sort-by">
+                <option value="all">All</option>
+                <option value="title">Title</option>
+                <option value="release_date">Release Date</option>
+                <option value="seen">Mark as Seen</option>
+                <option value="favorite">Favorite</option>
+            </select>
+        </div>
+        
+    </div>
+    
+    <div id="movie-collection">
+        <ul id="movie-collection-list" class="movie-list grid-view">
+            <!-- Hier werden die Filme aus der Sammlung hinzugefügt -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
